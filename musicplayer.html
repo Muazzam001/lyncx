@@ -1,0 +1,90 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+		<header>
+			<div class="heading">
+				<div class="item-heading">
+					<span>Zone1</span><br>
+					<p>Kitchen<i class="fa fa-angle-down" aria-hidden="true"></i></p>
+				</div>
+				
+				
+				<div class="item-icons">
+					<a href="#"><i class="fa fa-sliders" aria-hidden="true"></i></a><a href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+				</div>
+				
+				<div class="clearfix"></div>
+			</div>
+		</header>	
+
+				<div class="w3-bar w3-black">
+					<button class="w3-bar-item w3-button btn-setng active" onclick="openCity('CD')">CD Player</button>
+					<button class="w3-bar-item w3-button btn-setng" onclick="openCity('radio')">Radio</button>
+					<button class="w3-bar-item w3-button btn-setng" onclick="openCity('usb')">USB</button>
+					<button class="w3-bar-item w3-button btn-setng" onclick="openCity('bluetooth')">Bluetooth</button>
+				</div>
+
+				<div id="CD" class="w3-container city">
+					<img src="images/vol.png">
+				</div>
+
+				<div id="radio" class="w3-container city" style="display:none">
+					<img src="images/vol.png"> 
+				</div>
+
+				<div id="usb" class="w3-container city" style="display:none">
+					<img src="images/vol.png">
+				</div>
+				<div id="bluetooth" class="w3-container city" style="display:none">
+					<img src="images/vol.png">
+				</div>
+
+	
+	
+		<div class="container">
+		
+			<div class="volume-bar">
+				<div class="vol-icon">
+					<i class="fa fa-volume-up" aria-hidden="true"></i>
+				</div>
+				<div id="slidecontainer">
+					<input type="range" min="1" max="100" value="1" class="slider1" id="myRange">
+				</div>
+				<div class="vol-value">
+					<span id="demo"></span>
+				</div>
+			</div>
+			
+		</div>
+	
+	
+	
+	
+	
+<script>
+function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(cityName).style.display = "block";  
+}
+
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+
+</script>	
+
+</body>
+</html>

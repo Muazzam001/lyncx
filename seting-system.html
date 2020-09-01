@@ -1,0 +1,70 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+	<div class="heading">
+		<h2>Settings</h2>
+	</div>
+</header>
+
+				<div class="w3-bar w3-black">
+					<button class="w3-bar-item w3-button btn-setng " onclick="openCity('CD')">Zones</button>
+					<button class="w3-bar-item w3-button btn-setng" onclick="openCity('radio')">Source</button>
+					<button class="w3-bar-item w3-button btn-setng active" onclick="openCity('usb')">System</button>
+					
+				</div>
+
+				<div id="CD" class="w3-container city">
+					
+				</div>
+
+				<div id="radio" class="w3-container city" style="display:none">
+					<img src="images/vol.png"> 
+				</div>
+
+				<div id="usb" class="w3-container city" style="display:none">
+					<img src="images/vol.png">
+				</div>
+				
+				
+				
+				<div class="container">
+						<div class="player-list">
+							<ul>
+								<li>
+									<div class="list-text">
+										<p class="z-name">IP ADRESS</p>
+										<p class="z-catagry">5442.665.117.054</p>
+									</div>
+									
+									<div class="clearfix"></div>
+								</li>
+								
+							
+								
+								<li>
+									<div class="list-text">
+										<p class="z-name">FIRMWARE</p>
+										<p class="z-catagry">2.1</p>
+									</div>
+									<div class="list-button">
+										
+										<button type="button" class="update">UPDATE</button>
+										
+									</div>
+									<div class="clearfix"></div>
+								</li>
+								
+								
+								
+							</ul>	
+						</div>
+					</div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,176 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+	<div class="heading">
+		<h2>Settings</h2>
+	</div>
+</header>
+
+				<div class="w3-bar w3-black">
+					<button class="w3-bar-item w3-button btn-setng active" onclick="openCity('CD')">Zones</button>
+					<button class="w3-bar-item w3-button btn-setng" onclick="openCity('radio')">Source</button>
+					<button class="w3-bar-item w3-button btn-setng" onclick="openCity('usb')">System</button>
+					
+				</div>
+
+				<div id="CD" class="w3-container city">
+					<div class="container">
+						<div class="player-list">
+							<ul>
+								<li>
+									<div class="list-text">
+										<p class="z-name">ZONE NAME</p>
+										<p class="z-catagry">Kitchen</p>
+									</div>
+									<div class="list-button">
+										
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+										
+									</div>
+									<div class="clearfix"></div>
+								</li>
+								
+								
+								
+								
+								
+								
+								<li>
+									<div class="base-level">
+										<p class="z-name">BASS LEVEL</p>
+										
+									</div>
+									<div class="volume">
+										<div id="slidecontainer2">
+											<input type="range" min="1" max="100" value="1" class="slider1" id="myRange">
+										</div>
+										<div class="vol-value">
+											<span id="demo"></span>
+										</div>
+									</div>
+									<div class="vol-number">
+										<ul>
+											<li>-5</li>
+											<li>-4</li>
+											<li>-3</li>
+											<li>-2</li>
+											<li>-1</li>
+											<li>0</li>
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+										</ul>
+									</div>
+									<div class="clearfix"></div>
+								</li>
+								
+								
+								
+								<li>
+									<div class="base-level">
+										<p class="z-name">TREBLE LEVEL</p>
+										
+									</div>
+									<div class="volume">
+										<div id="slidecontainer2">
+											<input type="range" min="1" max="100" value="1" class="slider1" id="myRange">
+										</div>
+										<div class="vol-value">
+											<span id="demo"></span>
+										</div>
+									</div>
+									<div class="vol-number">
+										<ul>
+											<li>-5</li>
+											<li>-4</li>
+											<li>-3</li>
+											<li>-2</li>
+											<li>-1</li>
+											<li>0</li>
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+										</ul>
+									</div>
+									<div class="clearfix"></div>
+								</li>
+								
+								
+								
+								
+								<li>
+									<div class="base-level">
+										<p class="z-name">BALANCE</p>
+										
+									</div>
+									<div class="volume">
+										<div id="slidecontainer2">
+											<input type="range" min="1" max="100" value="1" class="slider1" id="myRange">
+										</div>
+										<div class="vol-value">
+											<span id="demo"></span>
+										</div>
+									</div>
+									<div class="vol-number">
+										<ul>
+											<li>-5</li>
+											<li>-4</li>
+											<li>-3</li>
+											<li>-2</li>
+											<li>-1</li>
+											<li>0</li>
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+										</ul>
+									</div>
+									<div class="clearfix"></div>
+								</li>
+								
+								
+								
+								<li>
+									<div class="list-text">
+										<p>Enable Zone</p>
+									</div>
+									<div class="list-button">
+										<label class="switch">
+											<input type="checkbox">
+											<span class="slider round"></span>
+										</label>
+									</div>
+									<div class="clearfix"></div>
+								</li>
+								
+								
+								
+							</ul>	
+						</div>
+					</div>
+				</div>
+
+				<div id="radio" class="w3-container city" style="display:none">
+					<img src="images/vol.png"> 
+				</div>
+
+				<div id="usb" class="w3-container city" style="display:none">
+					<img src="images/vol.png">
+				</div>
+				
+				
+	
+	
+	
+</body>
+</html>
