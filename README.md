@@ -1,1 +1,1 @@
-# mobile_app
+# Lync X Mobile App
